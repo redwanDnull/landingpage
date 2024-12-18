@@ -6,7 +6,7 @@ import clsx from "clsx"; // Utility for conditional class management
 
 // Define NavigationMenu styles using CVA (Class Variance Authority)
 const navigationMenuStyles = cva(
-  "relative flex items-center justify-between px-4 py-2", // Basic styling for the menu
+  "relative flex items-center justify-between px-4 py-1", // Basic styling for the menu
   {
     variants: {
       variant: {
@@ -33,7 +33,7 @@ const NavigationMenu = ({ children, className, variant, ...props }) => {
 
 // Navigation Menu Item Component (Individual Menu Item)
 const NavigationMenuItem = ({ children }) => (
-  <NavigationMenuPrimitive.Item className="flex items-center space-x-2">
+  <NavigationMenuPrimitive.Item className="flex items-center text-[13px] space-x-2 ml-20 ">
     {children} {/* Render menu link */}
   </NavigationMenuPrimitive.Item>
 );

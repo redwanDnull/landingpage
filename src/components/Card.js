@@ -6,7 +6,7 @@ export const Card = ({ children, className }) => {
   return (
     <div
       className={clsx(
-        "bg-white rounded-lg shadow-md overflow-hidden",
+        "overflow-hidden",
         className
       )}
     >

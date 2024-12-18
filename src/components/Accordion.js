@@ -16,7 +16,7 @@ export const AccordionItem = ({ children, value }) => {
   return (
     <AccordionPrimitive.Item
       value={value}
-      className="border-b border-gray-300"
+      className="border-b border-gray-300 p-5 mb-3.5"
     >
       {children}
     </AccordionPrimitive.Item>
@@ -31,7 +31,7 @@ export const AccordionTrigger = React.forwardRef(({ children }, ref) => (
       className="flex justify-between items-center w-full py-2 text-gray-800 font-medium"
     >
       {children}
-      <span>▼</span>
+      {/* <span>▼</span> */}
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
@@ -40,7 +40,7 @@ export const AccordionTrigger = React.forwardRef(({ children }, ref) => (
 export const AccordionContent = React.forwardRef(({ children }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="p-4 text-gray-600 bg-gray-100"
+    className="p-6 text-gray-600 bg-gray-100"
   >
     {children}
   </AccordionPrimitive.Content>
