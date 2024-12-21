@@ -38,7 +38,7 @@ const Page03 = () => {
     //   {/* page 3 */}
     <div>
       <div className="bg-gray-100 p-6 mt-10 px-8 lg:px-24 md:p-10">
-        <Button className="p-5 m-5 bg-white md:p-4 text-lg mt-6 border border-gray-300 text-[#265C5C] !text-[#265C5C] rounded-none shadow hover:bg-gray-100">
+        <Button className="p-5 m-5 bg-gray-200 md:p-4 text-lg mt-6 border border-gray-300 text-[#265C5C] rounded-none">
           GLOBAL PAYMENTS
         </Button>
 

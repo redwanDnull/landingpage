@@ -8,11 +8,10 @@ import tickIcon from "../assets/tick_icon.png";
 import dotIcon from "../assets/dot.png";
 const Footer = () => {
     return (
-        <div>
-         {/* Footer Section */}
-      <div className="bg-[#E2E6E9] py-8 px-8 lg:px-24 text-center">
-
-      <div className="flex items-center justify-center mb-20 space-x-4">
+      <div>
+        {/* Footer Section */}
+      <div className="bg-[#E2E6E9] py-8 px-8 lg:px-24 text-center w-full shadow">
+        <div className="flex items-center justify-center mb-20 space-x-4">
           <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-[#66F7E3]">
             <img src={tickIcon} alt="Tick Icon" className="absolute w-6 h-6" />
             <img src={dotIcon} alt="Dot Icon" className="absolute w-8.22 h-8.22 bottom-2.5 left-6" />
@@ -20,35 +19,39 @@ const Footer = () => {
           <span className="text-black font-bold text-2xl text-[#265C5C]">We made bank <br /> for Africans</span>
         </div>
 
-        <div className="flex justify-between items-center">
-          
+        {/* Full-Width Background Div */}
+        <div 
+        style={{ width: "117%",height:"",marginLeft: "-10%", }}
+        className="bg-[#E2E6E9] w-full shadow py-4">
+          <div className="flex justify-between items-center max-w-7xl mx-auto px-8">
+            {/* Social Icons */}
+            <div className="flex space-x-4">
+              <img src={facebookIcon} alt="Facebook" className="w-6" />
+              <img src={twitterIcon} alt="X" className="w-6" />
+              <img src={linkedinIcon} alt="LinkedIn" className="w-6" />
+              <img src={instagramIcon} alt="Instagram" className="w-6" />
+            </div>
 
-          {/* Social Icons */}
-          <div className="flex space-x-4">
-            <img src={facebookIcon} alt="Facebook" className="w-6" />
-            <img src={twitterIcon} alt="X" className="w-6" />
-            <img src={linkedinIcon} alt="LinkedIn" className="w-6" />
-            <img src={instagramIcon} alt="Instagram" className="w-6" />
+            {/* Navigation Links */}
+            <NavigationMenu className="flex space-x-6 text-[#265C5C]">
+              <NavigationMenuItem>
+                <NavigationMenuLink href="#about">About Us</NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="#services">Our Services</NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="#how-it-works">How it Works</NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="#contact">Contact Us</NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenu>
           </div>
-
-          {/* Navigation Links */}
-          <NavigationMenu className="flex space-x-6 text-[#265C5C]">
-            <NavigationMenuItem>
-              <NavigationMenuLink href="#about">About Us</NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink href="#services">Our Services</NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink href="#how-it-works">How it Works</NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink href="#contact">Contact Us</NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenu>
         </div>
       </div>
-      </div>
+    </div>
+        
     );
 };
 export default Footer;

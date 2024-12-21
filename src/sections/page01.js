@@ -50,7 +50,9 @@ const Page01 = () => {
       </div>
 
       {/* Mobile Image */}
-      <div className="relative w-full md:w-[400px] lg:w-[450px] mt-10 lg:mt-0 lg:ml-16">
+      <div       
+      style={{ marginRight: "200px"}}
+      className="relative w-full md:w-[400px] lg:w-[450px] mt-10 lg:mt-0 lg:ml-16">
         <img src={mobileImage} alt="Mobile App" className="w-full h-auto" />
       </div>
     </div>

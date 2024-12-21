@@ -9,8 +9,8 @@ const Page05 = () => {
   return (
     <div>
         {/* Section with White Background */}
-        <Card className="bg-[#FFFFFF] py-16 px-14 text-center">
-            <Card className="mt-16">
+        <div className="bg-[#FFFFFF] py-16 px-14 text-center w-full">
+            <Card className="mt-16 w-full">
                 <h2 className="text-[40px] md:text-[48px] font-extrabold text-[#000000] leading-tight mb-4">
                 Loved by Users across Africa
                 </h2>
@@ -23,7 +23,7 @@ const Page05 = () => {
                 
             </Card>
             {/* Section with Light Green Background */}
-            <Card
+            <div
             className="bg-[#F1FAF9] mx-20 w-152 h-67 p-10 flex justify-center items-center"
             >
                 {/* <h2>Fooos</h2> */}
@@ -103,8 +103,8 @@ const Page05 = () => {
                         </div>
                     </Card>
                 </Card>
-            </Card>
-        </Card>
+            </div>
+        </div>
     </div>
   );
 };

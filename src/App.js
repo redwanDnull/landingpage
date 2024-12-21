@@ -14,21 +14,39 @@ import Footer from "./sections/footer";
 function App() {
   return (
     
-    <div className="min-h-screen bg-[#E2E6E9]">
+    <div className=".w-full[100%] min-h-screen bg-[#E2E6E9]">
       {/* Header Section */}
       <Header />
 
       {/* Main Sections */}
       <main>
-        <Page01 />
-        <Page02 />
-        <Page03 />
-        <Page04 />
-        <Page05 />
+        <div className="w-full">
+          <Page01 />
+        </div>
+        <div className="w-full">
+          <Page02 />
+        </div>
+        <div className="w-full">
+          <Page03 />
+        </div>
+        <div className="w-full">
+          <Page04 />
+        </div>
+        <div className="w-full">
+          <Page05 />
+        </div>
+        <div className="w-full">
         <Page06 />
-        <Page07 />
-        <Page08 />
-        <Page09 />
+        </div>
+        <div className="w-full">
+          <Page07 />
+        </div>
+        <div className="w-full">
+          <Page08 />
+        </div>
+        <div className="w-full">
+          <Page09 />
+        </div>
       </main>
 
       {/* Footer Section */}

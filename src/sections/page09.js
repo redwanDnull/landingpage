@@ -22,11 +22,11 @@ const Page09 = () => {
         <img
           src={smilingWoman}
           alt="Smiling Woman"
-          className="absolute w-[1150px] h-[400px] object-cover"
+          className="absolute top-0 w-full h-full object-cover"
         />
 
         {/* Overlay Background */}
-        <div className="absolute w-[1150px] h-[400px]  bg-[#076969] opacity-80"></div>
+        <div className="absolute top-0 w-full h-full object-cover  bg-[#076969] opacity-80"></div>
 
 {/* Content */}
 <div className="relative z-10 flex flex-col md:flex-row justify-between items-center w-[80%] mx-auto ml-11">

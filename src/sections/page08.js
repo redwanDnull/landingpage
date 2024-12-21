@@ -4,80 +4,60 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "..
 
 const Page08 = () => {
   return (
-    //   {/* page 7 */}
-      <Card className="min-h-screen bg-[#F1FAF9] py-16 px-6 md:px-24">
-        {/* Header Section */}
-        <Card className="text-center mb-12">
-          <Card className="inline-block bg-[#E5E7EB] px-6 py-2 rounded-md mb-4">
-            <span className="text-[#265C5C] font-medium text-sm uppercase">
-              FREQUENTLY ASKED QUESTIONS
-            </span>
-          </Card>
-          <h2 className="text-[40px] md:text-[48px] font-extrabold text-[#000000]">
-            Have Questions? We <br /> have answers
-          </h2>
+    <Card className="min-h-screen bg-[#F1FAF9] py-16 px-6 md:px-24">
+      {/* Header Section */}
+      <Card className="text-center mb-12">
+        <Card className="inline-block bg-[#E5E7EB] px-6 py-2 rounded-md mb-4">
+          <span className="text-[#265C5C] font-medium text-sm uppercase">FREQUENTLY ASKED QUESTIONS</span>
         </Card>
+        <h2 className="text-[40px] md:text-[48px] font-extrabold text-[#000000]">
+          Have Questions? We <br /> have answers
+        </h2>
+      </Card>
 
-        {/* Accordion Section */}
-        <div className="w-full max-w-4xl mx-auto space-y-6"> {/* Center Accordion with space */}
-          <Accordion>
+      {/* Accordion Section */}
+      <div className="w-full max-w-4xl mx-auto space-y-6">
+        <Accordion>
+          {/* Accordion Items */}
+          <AccordionItem value="item-1">
+            <AccordionTrigger>
+              <span className="text-[#191919] text-[20px] font-semibold">How do I sign up on Kweli?</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              Signing up is easy! Download the Kweli app from the Playstore or Google Play, and register with your phone
+              number or email. You’ll be ready to bank in minutes.
+            </AccordionContent>
+          </AccordionItem>
 
-            {/* First Accordion - Default Open */}
-            <AccordionItem className="bg-[#E5E7EB] rounded-lg p-6 mb-10">
-              <div className="flex justify-between items-center w-full">
-                <span className="text-[#191919] text-[20px] font-semibold">
-                  How do I sign up on Kweli?
-                </span>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full border border-[#6D7280] text-[#6D7280]">
-                  −
-                </span>
-              </div>
-              <div>
-                <p className="text-[#6D7280] text-[20px] mt-4 leading-relaxed">
-                  Signing up is easy! Download the Kweli app from the Playstore or Google Play, 
-                  and register with your phone number or email. You’ll be ready to bank in minutes.
-                </p>
-              </div>
-            </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger>
+              <span className="text-[#191919] text-[20px] font-semibold">Can I send money internationally with Kweli?</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              Yes, you can send money internationally with Kweli, offering real-time rates and low fees.
+            </AccordionContent>
+          </AccordionItem>
 
-            {/* Second Accordion */}
-            <AccordionItem className="bg-[#E5E7EB] rounded-lg p-6 mb-4">
-              <div className="flex justify-between items-center w-full">
-                <span className="text-[#191919] text-[20px] font-semibold">
-                  Can I send money internationally with Kweli?
-                </span>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full border border-[#6D7280] text-[#6D7280]">
-                  +
-                </span>
-              </div>
-            </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger>
+              <span className="text-[#191919] text-[20px] font-semibold">What currencies can I use with Kweli?</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              Kweli supports multiple currencies, including USD, GBP, NGN, and more, for seamless cross-border payments.
+            </AccordionContent>
+          </AccordionItem>
 
-            {/* Third Accordion */}
-            <AccordionItem className="bg-[#E5E7EB] rounded-lg p-6 mb-4">
-              <div className="flex justify-between items-center w-full">
-                <span className="text-[#191919] text-[20px] font-semibold">
-                  What currencies can I use with Kweli?
-                </span>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full border border-[#6D7280] text-[#6D7280]">
-                  +
-                </span>
-              </div>
-            </AccordionItem>
-
-            {/* Fourth Accordion */}
-            <AccordionItem className="bg-[#E5E7EB] rounded-lg p-6 mb-4">
-              <div className="flex justify-between items-center w-full">
-                <span className="text-[#191919] text-[20px] font-semibold">
-                  Are there any hidden fees for creating an account?
-                </span>
-                <span className="flex items-center justify-center w-8 h-8 rounded-full border border-[#6D7280] text-[#6D7280]">
-                  +
-                </span>
-              </div>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </Card> 
+          <AccordionItem value="item-4">
+            <AccordionTrigger>
+              <span className="text-[#191919] text-[20px] font-semibold">Are there any hidden fees for creating an account?</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              No, Kweli does not charge hidden fees for creating an account. All fees are transparent and straightforward.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </div>
+    </Card>
   );
 };
 
